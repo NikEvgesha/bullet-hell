@@ -8,7 +8,8 @@ public class Resource : MonoBehaviour
     public void Harvest()
     {
         ResourceManager.Instance.AddResource(Type, ResourceAmount);
-        Destroy(gameObject);
+        Gather();
+        //Destroy(gameObject);
     }
     public void Gather()
     {
